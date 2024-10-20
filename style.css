@@ -1,0 +1,183 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  --custom-color: rgba(120, 120, 120, 0.25);
+  background-color: #1c1d1d;
+  background-image: linear-gradient(0deg, transparent 22%, var(--custom-color) 23%, var(--custom-color) 24%, transparent 25%, transparent 72%, var(--custom-color) 73%, var(--custom-color) 74%, transparent 75%, transparent),
+                    linear-gradient(90deg, transparent 22%, var(--custom-color) 23%, var(--custom-color) 24%, transparent 25%, transparent 72%, var(--custom-color) 73%, var(--custom-color) 74%, transparent 75%, transparent);
+  background-size: 50px 50px;
+  font-size: 115%;
+}
+
+#bgvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.card {
+  background: rgba(10, 10, 10, 0.85);
+  color: #fff;
+  padding: 2.5em;
+  border-radius: 25px;
+  max-width: 450px;
+  margin: 1.5em;
+}
+
+.card2 {
+  width: 100%;
+  max-width: fit-content;
+  margin: 1.5em;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.6em;
+  border-radius: 50%;
+  border: none;
+  height: 48px;
+  width: 48px;
+  background: rgba(130, 130, 130, 0.3);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.5em 1.2em;
+  border-radius: 28px;
+  background: rgba(130, 130, 130, 0.3);
+  color: #fff;
+  font-size: 115%;
+  width: calc(100% - 120px);
+}
+
+button:hover {
+  background: rgba(130, 130, 130, 0.6);
+}
+
+h1.temp {
+  font-size: 22px;
+  margin: 0 0 0.5em 0;
+}
+
+h1.temp-feels-like {
+  font-size: 18px;
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 18px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Fetching data...";
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 22px;
+}
+
+.dt {
+  font-size: 11px;
+}
+
+.card h5,
+.card3 h5 {
+  color: #878787;
+  margin: -1.2em 0 1.2em;
+}
+
+.topcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  margin-top: -50px;
+}
+
+.bottomcard {
+  height: 35vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card3 {
+  background: rgba(10, 10, 10, 0.85);
+  color: #fff;
+  padding: 2.5em;
+  border-radius: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5%;
+  width: 22%;
+  background-color: rgba(60, 60, 60, 0.4);
+  flex-direction: column;
+  margin: 0 1em;
+}
+
+.box img {
+  width: 70px;
+  height: 70px;
+}
+
+.ddt {
+  font-size: 13px;
+}
+
+/* Dropdown container */
+#dropdown {
+  position: fixed;
+  width: 65px;
+  height: 55px;
+}
+
+.dropkey {
+  font-size: large;
+  width: 220%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgba(10, 10, 10, 0.85);
+  color: #fff;
+  border: none;
+}

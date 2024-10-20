@@ -1,0 +1,56 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Environment variables
+.env
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files (adjust for your specific IDE)
+.vscode/
+.idea/
+
+# Compiled files
+dist/
+build/
+out/
+*.lock
+*.cache
+
+# Optional npm cache directory
+.npm/
+
+# Optional ESLint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Tests
+coverage/
+*.lcov
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.pid
+
+# Other generated files
+.sass-cache/
+.parcel-cache/
+.next/
+.cache/
+.pnp
+.pnp.js
+.turbo/
